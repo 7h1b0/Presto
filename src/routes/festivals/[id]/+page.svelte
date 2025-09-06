@@ -43,6 +43,7 @@
 		}
 		p {
 			font: var(--font-content);
+			color: var(--color-primary);
 		}
 	}
 </style>

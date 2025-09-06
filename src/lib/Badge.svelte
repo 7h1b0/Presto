@@ -8,7 +8,7 @@
 
 <style>
 	span {
-		background-color: var(--color-secondary);
+		background-color: var(--color-tertiary);
 		font: var(--font-caption);
 		color: white;
 		border-radius: 500px;

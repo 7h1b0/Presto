@@ -64,6 +64,10 @@
 		button[data-selected='true'] {
 			text-decoration: underline;
 		}
+
+		@media (width < 700px) {
+			display: none;
+		}
 	}
 
 	.artist {

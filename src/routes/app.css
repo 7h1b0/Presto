@@ -1,17 +1,17 @@
 :root {
-	--space-l: 5rem;
-	--space-m: 2rem;
-	--space-s: calc(var(--space-m) / 2);
-	--space-xs: calc(var(--space-m) / 3);
+	--space-l: clamp(4.5rem, 4.2955rem + 0.9091vw, 5rem);
+	--space-m: clamp(1.6875rem, 1.6108rem + 0.3409vw, 1.875rem);
+	--space-s: clamp(0.875rem, 0.8494rem + 0.1136vw, 0.9375rem);
+	--space-xs: clamp(0.5625rem, 0.5369rem + 0.1136vw, 0.625rem);
 
-	--color-background: #e8e7e3;
-	--color-primary: oklch(13% 0.028 261.692);
-	--color-secondary: oklch(44.6% 0.03 256.802);
-	--color-tertiary: oklch(87.2% 0.01 258.338);
+	--color-background: #182126;
+	--color-primary: #e7e9eb;
+	--color-secondary: #B8BABC;
+	--color-tertiary: #404141;
 
-	--font-content: 500 1.5rem system-ui;
-	--font-title: 700 3rem system-ui;
-	--font-caption: 500 1rem system-ui;
+	--font-content: 500 clamp(1.25rem, 1.155vw + 0.951rem, 1.875rem) system-ui;
+	--font-title: 700 clamp(2.5rem, 1.155vw + 2.201rem, 3.125rem) system-ui;
+	--font-caption: 500 clamp(1rem, 0.462vw + 0.88rem, 1.25rem) system-ui;
 
 	--rounded: 8px;
 }

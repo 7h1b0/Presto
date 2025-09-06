@@ -83,16 +83,20 @@
 		button[data-selected='true'] {
 			text-decoration: underline;
 		}
+
+		@media (width < 700px) {
+			display: none;
+		}
 	}
 
 	.sort {
 		--inner-padding: 2px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		max-width: 400px;
+		max-width: 25ch;
 		margin: 0 auto;
 		gap: var(--space-xs);
-		background: white;
+		background: var(--color-tertiary);
 		border-radius: var(--rounded);
 		place-items: center;
 		padding: var(--inner-padding);
@@ -107,10 +111,13 @@
 			border-radius: calc(var(--rounded) - var(--inner-padding));
 			cursor: pointer;
 			font: var(--font-caption);
+			color: var(--color-secondary);
+			padding-block: var(--space-xs);
 		}
 
 		label:has(:checked) {
 			background-color: var(--color-background);
+			color: var(--color-primary);
 		}
 	}
 
@@ -123,6 +130,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		gap: var(--space-xs);
 		padding: var(--space-m) var(--space-s);
 		border-top: 1px solid var(--color-tertiary);
 	}

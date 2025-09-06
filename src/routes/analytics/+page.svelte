@@ -18,16 +18,16 @@
 		<p>{data.duration} days</p>
 	</div>
 	<div>
-		<h3>Average festival duration</h3>
-		<p>{round(data.duration / data.festivals)} days</p>
-	</div>
-	<div>
 		<h3>Show seen</h3>
 		<p>{data.shows}</p>
 	</div>
 	<div>
 		<h3>Unique artist seen</h3>
 		<p>{data.artists}</p>
+	</div>
+	<div>
+		<h3>Average festival duration</h3>
+		<p>{round(data.duration / data.festivals)} days</p>
 	</div>
 	<div>
 		<h3>Average show per days</h3>
@@ -38,22 +38,16 @@
 <style>
 	section {
 		display: grid;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 		place-items: center;
-		row-gap: var(--space-s);
+		gap: var(--space-s);
 
 		div {
 			text-align: center;
 			padding: var(--space-m) 0;
-			background-color: white;
+			background-color: var(--color-tertiary);
 			width: 100%;
-		}
-
-		div:nth-child(3n - 2) {
-			border-radius: var(--rounded) 0 0 var(--rounded);
-		}
-		div:nth-child(3n) {
-			border-radius: 0 var(--rounded) var(--rounded) 0;
+			border-radius: var(--rounded);
 		}
 
 		h3 {
@@ -62,6 +56,13 @@
 		}
 		p {
 			font: var(--font-content);
+			color: var(--color-primary);
+		}
+
+		@media (width < 700px) {
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+
+			
 		}
 	}
 </style>

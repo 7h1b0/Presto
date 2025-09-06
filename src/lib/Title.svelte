@@ -11,5 +11,6 @@
 		font: var(--font-title);
 		text-align: center;
 		padding-block: var(--space-m);
+		color: var(--color-primary);
 	}
 </style>
