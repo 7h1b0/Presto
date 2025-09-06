@@ -1,0 +1,27 @@
+:root {
+	--space-l: 5rem;
+	--space-m: 2rem;
+	--space-s: calc(var(--space-m) / 2);
+	--space-xs: calc(var(--space-m) / 3);
+
+	--color-background: #e8e7e3;
+	--color-primary: oklch(13% 0.028 261.692);
+	--color-secondary: oklch(44.6% 0.03 256.802);
+	--color-tertiary: oklch(87.2% 0.01 258.338);
+
+	--font-content: 500 1.5rem system-ui;
+	--font-title: 700 3rem system-ui;
+	--font-caption: 500 1rem system-ui;
+
+	--rounded: 8px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: system-ui;
+	background-color: var(--color-background);
+}
